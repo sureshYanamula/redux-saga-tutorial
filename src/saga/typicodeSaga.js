@@ -12,10 +12,10 @@ function* getCartItems(action) {
   }
 }
 
-function* watchGetItem() {
+export function* watchGetItem() {
   yield takeEvery("USER_PENDING", getCartItems);
 }
 
-export function* mySaga() {
-  yield all([watchGetItem()]);
-}
+// export function* mySaga() {
+//   yield all([watchGetItem()]);
+// }

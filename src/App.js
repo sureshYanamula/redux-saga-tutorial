@@ -3,6 +3,7 @@ import "./App.css";
 import UserData from "./Components/UserData";
 import TypicodeUsers from "./Components/TypicodeUsers";
 import TypicodeUsersSaga from "./Components/TypicodeUsersSaga";
+import TypicodeUsersRedux from "./Components/TypicodeUsersRedux";
 
 function App() {
   const dispatch = useDispatch();
@@ -15,10 +16,11 @@ function App() {
   };
   return (
     <div>
+      <TypicodeUsersRedux />
       {/* <UserData /> */}
       {/* <TypicodeUsers /> */}
-      <TypicodeUsersSaga />
-      <button onClick={handleDispatchData}>Dispatch action</button>
+      {/* <TypicodeUsersSaga /> */}
+      {/* <button onClick={handleDispatchData}>Dispatch action</button> */}
     </div>
   );
 }
